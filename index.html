@@ -6,13 +6,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katsunori Ohnishi</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/style2.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 </head>
 
 <body onload="start()">
-hello world2.
 
+<div id="header" class="bg2">
+  <div id="headerblob">
+    <img src="./img/katsu.jpg" class="img-circle imgme" width="170px">
+    <div id="headertext">
+      <div id="htname">Katsunori Ohnishi</div>
+      <div id="htdesc">Master Student, University of Tokyo</div>
+      <div id="htem">ohnishi _at_ mi.t.u-tokyo.ac.jp</div>
+      <div id="icons">
+        <div class="svgico">
+          <a href="https://github.com/katsunoriohnishi"><img src="./img/octocat.svg" width="56px"></a>
+	  </div>
+	<div class="svgico">
+          <a href="https://scholar.google.com/citations?user=1PBvwCgAAAAJ&hl=ja"><img src="./img/gscholar.svg" width="50px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="timeline">
+    <div class="timelineitem">
+      <div class="tdate">Summer 2015</div>
+      <div class="ttitle">NTT Communication Science Lab: Internship</div>
+      <div class="tdesc">Automatic Speech Recognition</div>
+    </div>
+    <div class="timelineitem">
+     <div class="tdate">2015 - Present</div>
+      <div class="ttitle">University of Tokyo: Master Student</div>
+      <div class="tdesc"><span class="thigh">Action Recognition, Egocentric Vision</span></div>
+    </div>
+    <div class="timelineitem">
+      <div class="tdate">2011 - 2015</div>
+      <div class="ttitle">University of Tokyo: Bachelor's Degree</div>
+      <div class="tdesc">Thesis: Robust Ego-Activities Detection of Daily Living in Diversity Environment with a Wrist-mounted Camera</div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
+  <b>Bio</b>. I am a 1st year Master Student in the <a href="http://www.i.u-tokyo.ac.jp/index_e.shtml">Graduate School of Infomation Science and Technology</a> at <a href="http://www.u-tokyo.ac.jp/en/index.html">The University of Tokyo</a>. I am with the <a href="http://www.mi.t.u-tokyo.ac.jp">Machine Intelligence Lab</a> under the supervision of Prof. <a href="http://www.isi.imi.i.u-tokyo.ac.jp/~harada/">Tatsuya Harada</a>. My research interests are in the fields of computer vision and machine learning, with a focus on <span class="thigh">action recognition</span> and <span class="thigh">egocentric vision</span>. 
+<br><br>
+<!-- I would strongly like to take a doctoral degree overseas. -->
+More details can be found in my <a href="./CV_KatsunoriOhnishi.pdf">CV</a> (Nov. 2015).
+
+</div>
+
+
+
+
+
+
+
+<hr class="soft">
+
+<div class="container">
+  <h2>Publications</h2>
+  <div id="pubs">
+
+    <div class="pubwrap">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+            <img src="pub/wrist/icon.jpg">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+            <div class="pubt">Recognizing Activities of Daily Living with a <br>Wrist-mounted Camera</div>
+            <div class="pubd">
+	      This study proposes to mount a wrist-mounted camera for the recognizing activities of daily living (ADL). We develop a novel dataset and algorithm for this approach. 
+	      Detecting and recognizing handled objects are the crutial key of egocentric ADL recognition. 
+	      A wrist-mounted camera can capture handled objects at a large scale, and it make us to skip object detection process. 
+	      To compare a wrist-mounted camera nad head-mounted camera, we develop a novel dataset captured simultaneously by both cameras. We also develop a discriminative video representation that retains spatial and temporal information after encoding frame descriptors extracted by CNN.
+	      
+	      <!--
+	      We present a novel dataset and a novel algorithm for rec- ognizing activities of daily living (ADL) from a first-person wearable camera. Handled objects are crucially important for egocentric ADL recognition. For specific examination of objects related to users’ actions separately from other objects in an environment, many previous works have ad- dressed the detection of handled objects in images captured from head-mounted and chest-mounted cameras. Neverthe- less, detecting handled objects is not always easy because they tend to appear small in images. They can be occluded by a user’s body. As described herein, we mount a cam- era on a user’s wrist. A wrist-mounted camera can capture handled objects at a large scale, and thus it enables us to skip object detection process. To compare a wrist-mounted camera and a head-mounted camera, we also develop a novel and publicly available dataset that includes videos and annotations of daily activities captured simultaneously by both cameras. Additionally, we propose a discrimina- tive video representation that retains spatial and temporal information after encoding frame descriptors extracted by Convolutional Neural Networks.
+	      -->
+	    </div>
+            <div class="puba"><strong>Katsunori Ohnishi</strong>, Atsushi Kanehira, Asako Kanezaki, Tatsuya Harada</div>
+            <div class="pubv">arXiv, 2015</div>
+            <div class="publ">
+              <ul>
+                <li><a href="http://arxiv.org/abs/">PDF</a></li>
+                <li>Dataset</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- place js at end for faster loading -->
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+var more_projects_shown = false;
+function start() {
+  $("#showmoreprojects").click(function() {
+    if(!more_projects_shown) {
+      $("#moreprojects").slideDown('fast', function() {
+        $("#showmoreprojects").text('hide');
+      });
+      more_projects_shown = true;
+    } else {
+      $("#moreprojects").slideUp('fast', function() {
+        $("#showmoreprojects").text('show more');
+      });
+      more_projects_shown = false;
+    }
+  });
+
+  var more_pubs_shown = false;
+  $("#showmorepubs").click(function() {
+    if(!more_pubs_shown) {
+      $("#morepubs").slideDown('fast', function() {
+        $("#showmorepubs").text('hide');
+      });
+      more_pubs_shown = true;
+    } else {
+      $("#morepubs").slideUp('fast', function() {
+        $("#showmorepubs").text('show more');
+      });
+      more_pubs_shown = false;
+    }
+  });
+
+}
+
+</script>
 
 </body>
 </html>
