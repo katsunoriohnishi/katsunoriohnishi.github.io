@@ -1,1 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katsunori Ohnishi</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-71042825-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+
+
+  <body onload="start()">
+
+    <div id="header" class="bg2">
+      <div id="headerblob">
+	<img src="./img/katsu.jpg" class="img-circle imgme" width="200px">
+	<div id="headertext">
+	  <div id="htname">Katsunori Ohnishi</div>
+	  <div id="htdesc">DeNA Co., Ltd.</div>
+	  <div id="htem">ohnishi _at_ mi.t.u-tokyo.ac.jp</div>
+	  <div id="icons">
+            <div class="svgico">
+              <a href="https://github.com/katsunoriohnishi"><img src="./img/octocat.svg" width="56px"></a>
+	    </div>
+	    <div class="svgico">
+              <a href="https://scholar.google.com/citations?user=1PBvwCgAAAAJ&hl=ja"><img src="./img/gscholar.svg" width="50px"></a>
+            </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="timeline">
+	<div class="timelineitem">
+	  <div class="tdate">04/2015 - 09/2018</div>
+	  <div class="ttitle">The University of Tokyo: Master Student</div>
+	  <div class="tdesc">Theme: <span class="thigh">Action Recognition, Egocentric Vision</span></div>
+	</div>
+	<div class="timelineitem">
+	  <div class="tdate">05/2016 - 08/2016</div>
+	  <div class="ttitle">Johns Hopkins University: Visiting Student</div>
+	  <div class="tdesc">Working with Prof. <a href="http://www.cs.jhu.edu/~areiter/JHU/Home.html">Austin Reiter</a> <!--and Prof. <a href="http://www.cs.jhu.edu/~hager/">Gregory D. Hager</a>--> in the field of <span class="thigh">3D Object Recognition</span></div>
+	</div>
+	<div class="timelineitem">
+	  <div class="tdate">Summer 2015</div>
+	  <div class="ttitle">NTT CS Lab: Internship</div>
+	  <div class="tdesc">Worked with Dr. <a href="https://www.microsoft.com/en-us/research/people/tayoshio/">Takuya Yoshioka</a> in the field of <span class="thigh">Automatic Speech Recognition</span></div>
+	</div>
+	<div class="timelineitem">
+	  <div class="tdate">04/2011 - 03/2015</div>
+	  <div class="ttitle">The University of Tokyo: Bachelor's Degree</div>
+	  <div class="tdesc">Thesis: Robust Ego-Activities Detection of Daily Living in Diversity Environment with a Wrist-mounted Camera</div>
+	</div>
+      </div>
+    </div>
+
+    <div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
+      <b>Main Research Interests</b>: <span class="thigh">Video understanding and its application</span>
+<br>(e.g. action recognition, event detection, egocentric vision, video captioning, video generation)
+      <br><br>
+      <!--<br>
+      <b>Sub Research Interests</b>:</br> medical imaging, sentence generation, large-scale object detection, speech recognition, 3D object recognition, and machine-learning/computer-vision in sports.
+      <br><br>-->
+      More details can be found in my <a href="./CV_KatsunoriOhnishi.pdf">CV</a> (Jan. 2018).
+</br>
+
+    </div>
+
+
+
+
+    <hr class="soft">
+    <div class="container">
+      <h2>Publications</h2>
+      <div id="pubs">
+	<div class="pubwrap">
+	  <div class="row">
+            <div class="col-md-6">
+              <div class="pubimg">
+		<img src="pub/vgeneration/icon.png">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="pub">
+		<div class="pubt">Hierarchical Video Generation from Orthogonal Information: Optical flow and Texture </div>
+		<div class="pubd">
+
+		</div>
+		<div class="puba"><strong>Katsunori Ohnishi</strong>*, Shohei Yamamoto*, Yoshitaka Ushiku, Tatsuya Harada</div>
+		<div class="pubv">AAAI 2018 <b>(Oral presentation)</b></div>
+    * indicates equal contribution
+		<div class="publ">
+		  <ul>
+                    <li><a href="https://arxiv.org/abs/1711.09618">PDF</a></li>
+                    <li><a href="pub/vgeneration/aaai18_ohnishi.key">Slides (.key)</a></li>
+                    <li><a href="pub/vgeneration/aaai18_ohnishi.pdf">Slides (.pdf)</a></li>
+		  </ul>
+		</div>
+
+              </div>
+            </div>
+	  </div>
+	</div>
+  <div id="pubs">
+<div class="pubwrap">
+<div class="row">
+        <div class="col-md-6">
+          <div class="pubimg">
+<img src="pub/wrist/icon.jpg">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pub">
+<div class="pubt">Recognizing Activities of Daily Living with a <br>Wrist-mounted Camera</div>
+<div class="pubd">
+  This study proposes to mount a wrist-mounted camera for the recognizing activities of daily living (ADL).
+  Our contributions are the following:<br>
+   1. Demonstrated the benefits of a wrist-mounted camera over a head-mounted camera for ADL recognition<br>
+   2. Proposed a novel video representation<br>
+   3. Developed a publicly available dataset<br>
+  <!--
+  This study proposes to mount a wrist-mounted camera for the recognizing activities of daily living (ADL). We develop a novel dataset and algorithm for this approach.
+  Detecting and recognizing handled objects are the crutial key of egocentric ADL recognition.
+  A wrist-mounted camera can capture handled objects at a large scale, and it make us to skip object detection process.
+  To compare a wrist-mounted camera nad head-mounted camera, we develop a novel dataset captured simultaneously by both cameras. We also develop a discriminative video representation that retains spatial and temporal information after encoding frame descriptors extracted by CNN.
+  -->
+</div>
+<div class="puba"><strong>Katsunori Ohnishi</strong>, Atsushi Kanehira, Asako Kanezaki, Tatsuya Harada</div>
+<div class="pubv">CVPR 2016 <b>(Spotlight presentation)</b></div>
+<div class="publ">
+  <ul>
+                <li><a href="pub/wrist/cvpr16_ohnishi.pdf">PDF</a></li>
+                <li><a href="http://www.mi.t.u-tokyo.ac.jp/static/projects/miladl/">Dataset</a></li>
+                <li><a href="pub/wrist/cvpr16_ohnsihi_supplemental.pdf">Supplemental</a></li>
+                <li><a href="pub/wrist/cvpr16_poster_ohnishi.pdf">Poster</a></li>
+                <li><a href="pub/wrist/CVPRspotlight_Ohnishi.pdf">Slides</a></li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+</div>
+</div>
+
+	  <div id="pubs">
+	    <div class="pubwrap">
+	      <div class="row">
+		<div class="col-md-6">
+		  <div class="pubimg">
+		    <img src="pub/cpd/icon2.jpg">
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="pub">
+		    <div class="pubt">Improved Dense Trajectories with Cross-Stream</div>
+		    <div class="pubd">
+		      We present a new local descriptor that pools a new convolutional layer obtained from crossing two-stream networks along iDT, which is calculated by giving discriminative weights from one network on a convolutional layer of the other network. Our method has achieved state-of-the-art performance on ordinal action recognition datasets, <strong>92.3%</strong> on <strong>UCF101</strong>, and <strong>66.2%</strong> on <strong>HMDB51</strong>.
+		    </div>
+		    <div class="puba"><strong>Katsunori Ohnishi</strong>, Masatoshi Hidaka, Tatsuya Harada</div>
+		    <div class="pubv">ACMMM 2016</div>
+		    <div class="publ">
+		      <ul>
+			<li><a href="pub/cpd/acmmm16_ohnishi.pdf">PDF</a></li>
+			<li><a href="https://drive.google.com/folderview?id=0B7Loi-7ye3pPcUwzSVhwek9mQkU&usp=sharing">Trained CNN models on HMDB51</a></li>
+			<li><a href="./pub/cpd/acmmm16_ohnishi_supplemental.pdf">Supplemental</a></li>
+			<li><a href="./pub/cpd/acmmm16_ohnishi_poster.pdf">Poster</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+
+
+	<div id="pubs">
+	  <div class="pubwrap">
+	    <div class="row">
+              <div class="col-md-6">
+		<div class="pubimg">
+		  <img src="pub/narrative/icon.png">
+		</div>
+              </div>
+              <div class="col-md-6">
+		<div class="pub">
+		  <div class="pubt">Beyond Caption to Narrative: Video Captioning with Multiple Sentences</div>
+		  <div class="pubd">
+		    We attempt to generate video captions that convey richer contents by temporally segmenting the video with action localization, <strong>generating multiple captions from a single video</strong>, and connecting them with natural language processing techniques, in order to generate a story-like caption. We show that our proposed method can generate captions that are richer in contents.
+		  </div>
+		  <div class="puba"> Andrew Shin, <strong>Katsunori Ohnishi</strong>, Tatsuya Harada</div>
+		  <div class="pubv">ICIP 2016</div>
+		  <div class="publ">
+		    <ul>
+                      <li><a href="http://arxiv.org/abs/1605.05440">PDF</a></li>
+                      <li><a href="pub/narrative/icip16_andrew_poster.pdf">Poster</a></li>
+		    </ul>
+		  </div>
+		</div>
+              </div>
+	    </div>
+	  </div>
+
+	  <div id="pubs">
+	    <div class="pubwrap">
+	      <div class="row">
+		<div class="col-md-6">
+		  <div class="pubimg">
+		    <img src="pub/icassp16/icon.png">
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="pub">
+		    <div class="pubt">Noise Robust Speech Recognition using Recent Developments in Neural Networks for Computer Vision</div>
+		    <div class="pubd">
+		      This paper considers deeper convolutional neural networks and better activation function for speech recognition. We have achieved a <strong>WER of 11.1%</strong>, which is significantly better than the baseline CNN performance of 13.2% and previously reported results in the <strong>Aurora4</strong> task.
+		    </div>
+		    <div class="puba"> Takuya Yoshioka, <strong>Katsunori Ohnishi</strong>, Fuming Fang, Tomohiro Nakatani</div>
+		    <div class="pubv">ICASSP 2016</div>
+		  </div>
+		  <div class="publ">
+		    <ul>
+                      <li><a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7472775&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7472775">PDF</a></li>
+		    </ul>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<hr class="soft">
+	<div class="container">
+	  <h2>Preprints</h2>
+
+
+	    <div id="pubs">
+	      <div class="pubwrap">
+		<div class="row">
+		  <div class="col-md-6">
+		    <div class="pubimg">
+		      <img src="pub/vladcap/icon.png">
+		    </div>
+		  </div>
+		  <div class="col-md-6">
+		    <div class="pub">
+		      <div class="pubt">Dense Image Representation with Spatial Pyramid VLAD Coding of CNN for Locally Robust Captioning</div>
+		      <div class="pubd">
+			We propose to incorporate coding with VLAD on spatial pyramid for CNN features of sub-regions in order to generate image representations that better reflect the local information of the images. Our results show that our method of compact VLAD coding can match CNN features with as little as 3% of dimensionality and, when combined with spatial pyramid, it results in image captions that more accurately take local elements into account.
+		      </div>
+		      <div class="puba">Andrew Shin, Masataka Yamaguchi, <strong>Katsunori Ohnishi</strong>, Tatsuya Harada</div>
+		      <div class="pubv">arXiv 2016</div>
+		      <div class="publ">
+			<ul>
+			  <li><a href="http://arxiv.org/abs/1603.09046">PDF</a></li>
+			</ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+
+
+
+	    </div>
+	  </div>
+
+
+	  <hr class="soft">
+
+	  <div class="container">
+	    <h2>Competitions</h2>
+	    <div id="compes">
+
+	      <div class="pubwrap">
+		<div class="row">
+		  <div class="col-md-6">
+		    <div class="pubimg">
+		      <img src="pub/ilsvrc/icon.png">
+		    </div>
+		  </div>
+		  <div class="col-md-6">
+		    <div class="pub">
+		      <div class="pubt">ILSVRC 2015</div>
+		      <div class="pubd">
+			We have archieved the <strong>3rd</strong> place in the task 1b: Object detection with additional training data.
+		      </div>
+		      <div class="puba">Masataka Yamaguchi, Qishen Ha, <strong>Katsunori Ohnishi</strong>, Masatoshi Hidaka, Yusuke Mukuta, Tatsuya Harada</div>
+		      <div class="pubv"> Large Scale Visual Recognition Challenge 2015 in conjunction with ICCV 2015 <strong>(Invited poster)</strong></div>
+		      <div class="publ">
+			<ul>
+			  <li><a href="http://image-net.org/challenges/posters/MILUT.pdf">Poster</a></li>
+			</ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+
+
+
+	  <!-- place js at end for faster loading -->
+	  <script src="jquery-1.11.1.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script>
+
+	    var more_projects_shown = false;
+	    function start() {
+	    $("#showmoreprojects").click(function() {
+	    if(!more_projects_shown) {
+	    $("#moreprojects").slideDown('fast', function() {
+            $("#showmoreprojects").text('hide');
+	    });
+	    more_projects_shown = true;
+	    } else {
+	    $("#moreprojects").slideUp('fast', function() {
+            $("#showmoreprojects").text('show more');
+	    });
+	    more_projects_shown = false;
+	    }
+	    });
+
+	    var more_pubs_shown = false;
+	    $("#showmorepubs").click(function() {
+	    if(!more_pubs_shown) {
+	    $("#morepubs").slideDown('fast', function() {
+            $("#showmorepubs").text('hide');
+	    });
+	    more_pubs_shown = true;
+	    } else {
+	    $("#morepubs").slideUp('fast', function() {
+            $("#showmorepubs").text('show more');
+	    });
+	    more_pubs_shown = false;
+	    }
+	    });
+
+	    }
+
+	  </script>
+
+  </body>
+</html>
